@@ -11,17 +11,43 @@
             margin: 0;
             padding: 0;
         }
-        .container {
-            text-align: center;
-        }
+
         .table-center {
-            background-color: #fefeff;
+            background-color: #fbf0fe;
             margin-left: auto;
             margin-right: auto;
         }
-        .font-color {
-            color: black;
-            text-decoration: underline;
+
+        .ForMobileZoomInPurpose {
+            color: transparent;
+            display: none;
+            height: 0;
+            max-height: 0;
+            max-width: 0;
+            opacity: 0;
+            overflow: hidden;
+            mso-hide: all;
+            visibility: hidden;
+            width: 0;
+        }
+
+        .spacing {
+            padding: 10px 50px 10px 50px;
+        }
+
+        .IG-style {
+            text-decoration: none;
+            padding: 10px 0px 0px 50px;
+        }
+
+        .FB-style {
+            text-decoration: none;
+            padding: 10px 50px 0px 0px;
+        }
+
+        .TNC-style {
+            text-align: right;
+            padding: 10px 10px 0px 0px;
         }
 
         /* -------------------------------------
@@ -33,22 +59,47 @@
                 height: auto;
             }
         }
-
     </style>
 </head>
 <body>
-    <div class="container">
+    <div style="text-align: center">
         <table class="table-center">
+
+            <!-- START MAIN CONTENT AREA -->
             <tr>
                 <td>
-                    <div >
-                        <a class="font-color" href="https://www.facebook.com/people/Stephen-Knoll-New-York-Singapore/100086107058930/?paipv=0&eav=AfYyy17CzrADSgrgZ1xZrLYsR40gEsolv6YIXjOBg4q3Y4Ga_-Z1CZjuRdxZO3Sn6aU&_rdr">If you have trouble reading this email, click here to view online.</a>
-                    </div>
                     <div>
-                        <img src="https://stephenknoll-singapore-bucket.s3.ap-southeast-1.amazonaws.com/email/body.png" alt="SKNY Mobile Salon Promotion" />
+                        <!-- IGNORE-->
+                        <!-- HAVE TO HAS TEXT FOR MOBILE USER TO ZOOM IN EMAIL-->
+                        <span class="ForMobileZoomInPurpose">Ignore</span>
+
+                        <img src="https://stephenknoll-singapore-bucket.s3.ap-southeast-1.amazonaws.com/email/body-no-footer.png" alt="SKNY Mobile Salon Promotion" />
                     </div>
                 </td>
             </tr>
+            <!-- END MAIN CONTENT AREA -->
+            <!-- START FOOTER AREA -->
+            <tr>
+                <td>
+                    <div class="spacing">
+                        <img src="https://stephenknoll-singapore-bucket.s3.ap-southeast-1.amazonaws.com/email/footer-title.png" alt="SKNY SUBSCRIBE" />
+                    </div>
+
+                    <div style="white-space: nowrap">
+                        <a class="IG-style" href="https://www.instagram.com/stephenknollsg/">
+                            <img src="https://stephenknoll-singapore-bucket.s3.ap-southeast-1.amazonaws.com/email/ig-button.png" alt="SKNY IG" />
+                        </a>
+                        <a class="FB-style" href="https://www.facebook.com/profile.php?id=100086107058930">
+                            <img src="https://stephenknoll-singapore-bucket.s3.ap-southeast-1.amazonaws.com/email/fb-button.png" alt="SKNY FB" />
+                        </a>
+                    </div>
+
+                    <div class="TNC-style">
+                        <img src="https://stephenknoll-singapore-bucket.s3.ap-southeast-1.amazonaws.com/email/tnc.png" alt="SKNY T&C" />
+                    </div>
+                </td>
+            </tr>
+            <!-- END FOOTER AREA -->
         </table>
     </div>
 
